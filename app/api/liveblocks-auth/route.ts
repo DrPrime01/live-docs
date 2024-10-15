@@ -3,7 +3,6 @@ import { getUserColor } from "@/lib/utils";
 import { currentUser } from "@clerk/nextjs/server";
 import { redirect } from "next/navigation";
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export async function POST(request: Request) {
   // Get the current user from your database
   const clerkUser = await currentUser();
